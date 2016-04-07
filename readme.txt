@@ -1,0 +1,1 @@
+http://dovganych.github.io/chess_board/
