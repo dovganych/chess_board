@@ -1,24 +1,17 @@
-*{text-align: center;}
-div{width: 40px;
-  height: 40px;
-  color: red;
-  text-align: center;
-}
-.white
+#canvas
 {
-  background-color: white;
-  float: left;
- 
-  text-align: center;
-  border: 1px solid black;
+	display: flex;
+	justify-content:center;
+	align-items:center;
 }
-.black
+#input
 {
-  background-color: black;
-  float: left;
-
-  text-align: center;
-  border: 1px solid black;
+	position: fixed;
+	margin-top: 5px;
+	margin-left: 10px;
+	float:left;
 }
-
-.break{ clear:both; height: 0px; }
+fieldset
+{
+	border: 3px solid black;
+}

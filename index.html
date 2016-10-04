@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>chess_board</title>
-  </head>
-  <body>
-     <button onclick="masCreate()">Create</button>
-	   <button onclick="Run()">Run</button><br>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  </body>
+<head>
+<title>Chess board</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body onload="doInitia();">
+    <div id="input">
+        <fieldset>
+            <legend>Change the board</legend>
+            <label for="boardSize">Enter size:</label>
+                <input type="number" min="3" id="boardSize" placeholder="count of squares" onchange="change(event);" required> <br>
+            <label for="x_initial">Enter x-start:</label>    
+                <input type="number"  min="1" id="x_initial" placeholder="x-position" required> <br>
+            <label for="y_initial">Enter y-start:</label>
+                <input type="number" min="1" id="y_initial" placeholder="y-position" required> <br>
+            <button onclick="changeBoard();">Draw_full</button> <br>
+        </fieldset>
+    </div>
+    <div id='canvas' >
+        <canvas id='board' width="280px" height="280px"></canvas> 
+    </div> 
+</body>
 </html>
